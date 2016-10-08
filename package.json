@@ -1,0 +1,51 @@
+{
+  "name": "bafill",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "directories": {
+    "bin": "./bin",
+    "lib": "./lib",
+    "example": "./examples"
+  },
+  "author": {
+    "name": "kimhou",
+    "email": "honkang@163.com",
+    "url": "http://www.kimhou.net"
+  },
+  "maintainers": [
+  ],
+  "contributors": [
+  ],
+  "description": "babel build tool for ReactJs, ES6/7 or Nodejs.",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "babel",
+    "react",
+    "node",
+    "es6",
+    "es7",
+    "javascript"
+  ],
+  "bin": {
+    "bafill": "./bin/bafill"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "optionalDependencies": {
+  },
+  "bugs": {
+    "url": "https://github.com/kimhou/bafill/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kimhou/bafill.git"
+  },
+  "license": "MIT"
+}
