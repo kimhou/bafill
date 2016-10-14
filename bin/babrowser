@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+'use strict'
+
+const commander = require('commander');
+//const Bafill = require('../lib/Bafill').default;
+
+commander
+	.version(require('../package.json').version)
+
+	.option('-d --out')
+	
+	.option('--target [target]', 'build target level')
+
+	.option('-w, --watch <bool>', 'Watch folder files changes for build', true)
+
+	.option('-c, --config [file]', 'Custom bafill config file')
+
+	.option('--presets [items]', 'Custom babel-presets')
+	.option('--plugins [items]', 'Custom babel-plugins')
+
+	.option('--debug', 'open debug log')
+
+	.parse(process.argv);
+
+if (process.argv.length == 2) {
+	commander.outputHelp();
+	process.exit(1);
+}else{
+	commander.type = 'browser';
+	const bafill = new Bafill();
+}

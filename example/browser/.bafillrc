@@ -1,0 +1,13 @@
+module.exports = [{
+	type: 'browser',
+	level: 0,
+
+	entry: [{
+		path: '',
+		moduleReg: ''
+	}],
+	output: {
+		filename: '$1.js',
+		path: './bundle'
+	}
+}]

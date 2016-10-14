@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+'use strict'
+
+const commander = require('commander');
+//const Bafill = require('../lib/Bafill').default;
+
+
+commander
+	.option('--type <type>', 'build target type, node|react-node|browser, default is browser', /^(node|browser|react-node)$/i, 'browser')
+
+	.parse(process.argv);
+
+switch (commander.type){
+	case 'node':
+		require('./banode');
+		break;
+	case 'react-node':
+		require('./bareactnode');
+		break;
+	default:
+		require('./babrowser');
+		break;
+}
